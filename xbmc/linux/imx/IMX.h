@@ -34,6 +34,15 @@
 #include <thread>
 #include <map>
 
+#define DCIC_IOC_ALLOC_ROI_NUM  _IO('D', 10)
+#define DCIC_IOC_FREE_ROI_NUM   _IO('D', 11)
+#define DCIC_IOC_CONFIG_DCIC    _IO('D', 12)
+#define DCIC_IOC_CONFIG_ROI             _IO('D', 13)
+#define DCIC_IOC_GET_RESULT             _IO('D', 14)
+#define DCIC_IOC_START_VSYNC            _IO('D', 15)
+#define DCIC_IOC_STOP_VSYNC             _IO('D', 16)
+
+
 #define DIFFRINGSIZE 60
 
 #define FB_DEVICE "/dev/fb0"
