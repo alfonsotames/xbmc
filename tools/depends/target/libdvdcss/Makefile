@@ -19,7 +19,7 @@ RETRIEVE_TOOL := curl -Ls --create-dirs --retry 10 --retry-delay 3
 ARCHIVE_TOOL := tar --strip-components=1 -xf
 
 # configuration settings
-config = --prefix=$(PREFIX) --disable-shared --enable-static --with-pic
+config = --prefix=$(PREFIX) --disable-shared --enable-static --with-pic --host=arm-fslc-linux-gnueabi
 
 CLEAN_FILES=$(ARCHIVE) $(PLATFORM)
 

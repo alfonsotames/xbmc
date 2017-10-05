@@ -3,7 +3,7 @@ include DVDNAV-VERSION
 DEPS = DVDNAV-VERSION Makefile
 
 # configuration settings
-config = --prefix=$(PREFIX) --disable-shared --enable-static --with-pic
+config = --prefix=$(PREFIX) --disable-shared --enable-static --with-pic --host=arm-fslc-linux-gnueabi
 EXTRA_CFLAGS = -D_XBMC -DHAVE_DVDCSS_DVDCSS_H
 
 ifeq ($(CROSS_COMPILING), yes)
